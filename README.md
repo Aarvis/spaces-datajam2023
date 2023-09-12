@@ -129,4 +129,4 @@ node ./scoreboardSocketReceiver.js
 ```
 
 ### Conclusion
-Without closing the previous terminal, open a new terminal and navigate back to /datajam-2023/js/server. Run:
+Go to the browser page and refresh
