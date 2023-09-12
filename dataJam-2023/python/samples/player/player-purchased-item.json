@@ -1,0 +1,1727 @@
+{
+  "id": "a0fcb188-094e-4a02-af91-c4aa106d9cf9",
+  "includesFullState": true,
+  "type": "player-purchased-item",
+  "actor": {
+    "type": "player",
+    "id": "76561198042070812",
+    "stateDelta": {
+      "id": "76561198042070812",
+      "series": { "id": "76561198042070812" },
+      "game": {
+        "id": "76561198042070812",
+        "money": -300,
+        "inventoryValue": 300,
+        "netWorth": 0,
+        "items": [
+          {
+            "id": "smokeGrenade",
+            "statePath": [{ "id": "smokeGrenade" }],
+            "equipped": true,
+            "stashed": false
+          }
+        ]
+      }
+    },
+    "state": {
+      "id": "76561198042070812",
+      "teamId": "3128",
+      "side": "counter-terrorists",
+      "series": {
+        "id": "76561198042070812",
+        "statePath": [{ "id": "76561198042070812" }],
+        "name": "maNkz",
+        "participationStatus": "active",
+        "kills": 0,
+        "killAssistsReceived": 0,
+        "killAssistsGiven": 0,
+        "killAssistsReceivedFromPlayer": [],
+        "weaponKills": {},
+        "teamkills": 0,
+        "teamkillAssistsReceived": 0,
+        "teamkillAssistsGiven": 0,
+        "teamkillAssistsReceivedFromPlayer": [],
+        "weaponTeamkills": {},
+        "selfkills": 0,
+        "deaths": 0,
+        "structuresDestroyed": 0,
+        "structuresCaptured": 0,
+        "objectives": [],
+        "multikills": [],
+        "externalLinks": [
+          {
+            "dataProvider": { "name": "STEAM" },
+            "externalEntity": { "id": "76561198042070812" }
+          }
+        ],
+        "headshots": 0,
+        "teamHeadshots": 0
+      },
+      "game": {
+        "id": "76561198042070812",
+        "statePath": [{ "id": "76561198042070812" }],
+        "name": "maNkz",
+        "character": { "name": "counter-terrorist", "id": "counter-terrorist" },
+        "participationStatus": "active",
+        "money": 500,
+        "inventoryValue": 500,
+        "netWorth": 1000,
+        "kills": 0,
+        "killAssistsReceived": 0,
+        "killAssistsGiven": 0,
+        "killAssistsReceivedFromPlayer": [],
+        "weaponKills": {},
+        "multikills": [],
+        "teamkills": 0,
+        "teamkillAssistsReceived": 0,
+        "teamkillAssistsGiven": 0,
+        "teamkillAssistsReceivedFromPlayer": [],
+        "weaponTeamkills": {},
+        "selfkills": 0,
+        "deaths": 0,
+        "structuresDestroyed": 0,
+        "structuresCaptured": 0,
+        "items": [
+          {
+            "id": "knife",
+            "statePath": [{ "id": "knife" }],
+            "equipped": true,
+            "stashed": false
+          },
+          {
+            "id": "hkp2000",
+            "statePath": [{ "id": "hkp2000" }],
+            "equipped": true,
+            "stashed": false
+          },
+          {
+            "id": "smokeGrenade",
+            "statePath": [{ "id": "smokeGrenade" }],
+            "equipped": true,
+            "stashed": false
+          }
+        ],
+        "objectives": [],
+        "abilities": [],
+        "position": null,
+        "externalLinks": [
+          {
+            "dataProvider": { "name": "STEAM" },
+            "externalEntity": { "id": "76561198042070812" }
+          }
+        ],
+        "alive": true,
+        "currentArmor": 0,
+        "currentHealth": 100,
+        "damageDealt": 0,
+        "damageTaken": 0,
+        "headshots": 0,
+        "maxHealth": 100,
+        "selfdamageDealt": 0,
+        "selfdamageTaken": 0,
+        "teamdamageDealt": 0,
+        "teamHeadshots": 0,
+        "teamdamageTaken": 0
+      },
+      "name": "maNkz"
+    }
+  },
+  "action": "purchased",
+  "target": {
+    "type": "item",
+    "id": "smokeGrenade",
+    "stateDelta": {
+      "id": "smokeGrenade",
+      "statePath": [{ "id": "smokeGrenade" }],
+      "equipped": true,
+      "stashed": false
+    },
+    "state": {
+      "id": "smokeGrenade",
+      "statePath": [{ "id": "smokeGrenade" }],
+      "equipped": true,
+      "stashed": false
+    }
+  },
+  "seriesStateDelta": {
+    "id": "2579089",
+    "games": [
+      {
+        "id": "c5c7500c-6db8-45c8-b6ab-2be01b401ef7",
+        "teams": [
+          {
+            "id": "3128",
+            "money": -300,
+            "inventoryValue": 300,
+            "netWorth": 0,
+            "players": [
+              {
+                "id": "76561198042070812",
+                "money": -300,
+                "inventoryValue": 300,
+                "netWorth": 0,
+                "items": [
+                  {
+                    "id": "smokeGrenade",
+                    "statePath": [{ "id": "smokeGrenade" }],
+                    "equipped": true,
+                    "stashed": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "seriesState": {
+    "id": "2579089",
+    "title": { "nameShortened": "csgo" },
+    "format": "best-of-3",
+    "started": true,
+    "startedAt": "2023-05-30T17:56:17.372Z",
+    "finished": false,
+    "valid": true,
+    "teams": [
+      {
+        "id": "3128",
+        "statePath": [{ "id": "3128" }],
+        "name": "ECSTATIC",
+        "score": 0,
+        "won": false,
+        "kills": 0,
+        "killAssistsReceived": 0,
+        "killAssistsGiven": 0,
+        "killAssistsReceivedFromPlayer": [],
+        "weaponKills": {},
+        "multikills": [],
+        "teamkills": 0,
+        "teamkillAssistsReceived": 0,
+        "teamkillAssistsGiven": 0,
+        "teamkillAssistsReceivedFromPlayer": [],
+        "weaponTeamkills": {},
+        "selfkills": 0,
+        "deaths": 0,
+        "structuresDestroyed": 0,
+        "structuresCaptured": 0,
+        "objectives": [],
+        "players": [
+          {
+            "id": "76561198030545997",
+            "statePath": [{ "id": "76561198030545997" }],
+            "name": "Queenix",
+            "participationStatus": "active",
+            "kills": 0,
+            "killAssistsReceived": 0,
+            "killAssistsGiven": 0,
+            "killAssistsReceivedFromPlayer": [],
+            "weaponKills": {},
+            "teamkills": 0,
+            "teamkillAssistsReceived": 0,
+            "teamkillAssistsGiven": 0,
+            "teamkillAssistsReceivedFromPlayer": [],
+            "weaponTeamkills": {},
+            "selfkills": 0,
+            "deaths": 0,
+            "structuresDestroyed": 0,
+            "structuresCaptured": 0,
+            "objectives": [],
+            "multikills": [],
+            "externalLinks": [
+              {
+                "dataProvider": { "name": "STEAM" },
+                "externalEntity": { "id": "76561198030545997" }
+              }
+            ],
+            "headshots": 0,
+            "teamHeadshots": 0
+          },
+          {
+            "id": "76561198042070812",
+            "statePath": [{ "id": "76561198042070812" }],
+            "name": "maNkz",
+            "participationStatus": "active",
+            "kills": 0,
+            "killAssistsReceived": 0,
+            "killAssistsGiven": 0,
+            "killAssistsReceivedFromPlayer": [],
+            "weaponKills": {},
+            "teamkills": 0,
+            "teamkillAssistsReceived": 0,
+            "teamkillAssistsGiven": 0,
+            "teamkillAssistsReceivedFromPlayer": [],
+            "weaponTeamkills": {},
+            "selfkills": 0,
+            "deaths": 0,
+            "structuresDestroyed": 0,
+            "structuresCaptured": 0,
+            "objectives": [],
+            "multikills": [],
+            "externalLinks": [
+              {
+                "dataProvider": { "name": "STEAM" },
+                "externalEntity": { "id": "76561198042070812" }
+              }
+            ],
+            "headshots": 0,
+            "teamHeadshots": 0
+          },
+          {
+            "id": "76561198070876270",
+            "statePath": [{ "id": "76561198070876270" }],
+            "name": "Nodios",
+            "participationStatus": "active",
+            "kills": 0,
+            "killAssistsReceived": 0,
+            "killAssistsGiven": 0,
+            "killAssistsReceivedFromPlayer": [],
+            "weaponKills": {},
+            "teamkills": 0,
+            "teamkillAssistsReceived": 0,
+            "teamkillAssistsGiven": 0,
+            "teamkillAssistsReceivedFromPlayer": [],
+            "weaponTeamkills": {},
+            "selfkills": 0,
+            "deaths": 0,
+            "structuresDestroyed": 0,
+            "structuresCaptured": 0,
+            "objectives": [],
+            "multikills": [],
+            "externalLinks": [
+              {
+                "dataProvider": { "name": "STEAM" },
+                "externalEntity": { "id": "76561198070876270" }
+              }
+            ],
+            "headshots": 0,
+            "teamHeadshots": 0
+          },
+          {
+            "id": "76561198102263776",
+            "statePath": [{ "id": "76561198102263776" }],
+            "name": "salazar",
+            "participationStatus": "active",
+            "kills": 0,
+            "killAssistsReceived": 0,
+            "killAssistsGiven": 0,
+            "killAssistsReceivedFromPlayer": [],
+            "weaponKills": {},
+            "teamkills": 0,
+            "teamkillAssistsReceived": 0,
+            "teamkillAssistsGiven": 0,
+            "teamkillAssistsReceivedFromPlayer": [],
+            "weaponTeamkills": {},
+            "selfkills": 0,
+            "deaths": 0,
+            "structuresDestroyed": 0,
+            "structuresCaptured": 0,
+            "objectives": [],
+            "multikills": [],
+            "externalLinks": [
+              {
+                "dataProvider": { "name": "STEAM" },
+                "externalEntity": { "id": "76561198102263776" }
+              }
+            ],
+            "headshots": 0,
+            "teamHeadshots": 0
+          },
+          {
+            "id": "76561198047198945",
+            "statePath": [{ "id": "76561198047198945" }],
+            "name": "kraghen",
+            "participationStatus": "active",
+            "kills": 0,
+            "killAssistsReceived": 0,
+            "killAssistsGiven": 0,
+            "killAssistsReceivedFromPlayer": [],
+            "weaponKills": {},
+            "teamkills": 0,
+            "teamkillAssistsReceived": 0,
+            "teamkillAssistsGiven": 0,
+            "teamkillAssistsReceivedFromPlayer": [],
+            "weaponTeamkills": {},
+            "selfkills": 0,
+            "deaths": 0,
+            "structuresDestroyed": 0,
+            "structuresCaptured": 0,
+            "objectives": [],
+            "multikills": [],
+            "externalLinks": [
+              {
+                "dataProvider": { "name": "STEAM" },
+                "externalEntity": { "id": "76561198047198945" }
+              }
+            ],
+            "headshots": 0,
+            "teamHeadshots": 0
+          }
+        ],
+        "headshots": 0,
+        "teamHeadshots": 0
+      },
+      {
+        "id": "47336",
+        "statePath": [{ "id": "47336" }],
+        "name": "forZe",
+        "score": 0,
+        "won": false,
+        "kills": 0,
+        "killAssistsReceived": 0,
+        "killAssistsGiven": 0,
+        "killAssistsReceivedFromPlayer": [],
+        "weaponKills": {},
+        "multikills": [],
+        "teamkills": 0,
+        "teamkillAssistsReceived": 0,
+        "teamkillAssistsGiven": 0,
+        "teamkillAssistsReceivedFromPlayer": [],
+        "weaponTeamkills": {},
+        "selfkills": 0,
+        "deaths": 0,
+        "structuresDestroyed": 0,
+        "structuresCaptured": 0,
+        "objectives": [],
+        "players": [
+          {
+            "id": "76561198365697700",
+            "statePath": [{ "id": "76561198365697700" }],
+            "name": "shalfey",
+            "participationStatus": "active",
+            "kills": 0,
+            "killAssistsReceived": 0,
+            "killAssistsGiven": 0,
+            "killAssistsReceivedFromPlayer": [],
+            "weaponKills": {},
+            "teamkills": 0,
+            "teamkillAssistsReceived": 0,
+            "teamkillAssistsGiven": 0,
+            "teamkillAssistsReceivedFromPlayer": [],
+            "weaponTeamkills": {},
+            "selfkills": 0,
+            "deaths": 0,
+            "structuresDestroyed": 0,
+            "structuresCaptured": 0,
+            "objectives": [],
+            "multikills": [],
+            "externalLinks": [
+              {
+                "dataProvider": { "name": "STEAM" },
+                "externalEntity": { "id": "76561198365697700" }
+              }
+            ],
+            "headshots": 0,
+            "teamHeadshots": 0
+          },
+          {
+            "id": "76561198059614402",
+            "statePath": [{ "id": "76561198059614402" }],
+            "name": "zorte",
+            "participationStatus": "active",
+            "kills": 0,
+            "killAssistsReceived": 0,
+            "killAssistsGiven": 0,
+            "killAssistsReceivedFromPlayer": [],
+            "weaponKills": {},
+            "teamkills": 0,
+            "teamkillAssistsReceived": 0,
+            "teamkillAssistsGiven": 0,
+            "teamkillAssistsReceivedFromPlayer": [],
+            "weaponTeamkills": {},
+            "selfkills": 0,
+            "deaths": 0,
+            "structuresDestroyed": 0,
+            "structuresCaptured": 0,
+            "objectives": [],
+            "multikills": [],
+            "externalLinks": [
+              {
+                "dataProvider": { "name": "STEAM" },
+                "externalEntity": { "id": "76561198059614402" }
+              }
+            ],
+            "headshots": 0,
+            "teamHeadshots": 0
+          },
+          {
+            "id": "76561198031908632",
+            "statePath": [{ "id": "76561198031908632" }],
+            "name": "Krad",
+            "participationStatus": "active",
+            "kills": 0,
+            "killAssistsReceived": 0,
+            "killAssistsGiven": 0,
+            "killAssistsReceivedFromPlayer": [],
+            "weaponKills": {},
+            "teamkills": 0,
+            "teamkillAssistsReceived": 0,
+            "teamkillAssistsGiven": 0,
+            "teamkillAssistsReceivedFromPlayer": [],
+            "weaponTeamkills": {},
+            "selfkills": 0,
+            "deaths": 0,
+            "structuresDestroyed": 0,
+            "structuresCaptured": 0,
+            "objectives": [],
+            "multikills": [],
+            "externalLinks": [
+              {
+                "dataProvider": { "name": "STEAM" },
+                "externalEntity": { "id": "76561198031908632" }
+              }
+            ],
+            "headshots": 0,
+            "teamHeadshots": 0
+          },
+          {
+            "id": "76561198350362302",
+            "statePath": [{ "id": "76561198350362302" }],
+            "name": "r3salt",
+            "participationStatus": "active",
+            "kills": 0,
+            "killAssistsReceived": 0,
+            "killAssistsGiven": 0,
+            "killAssistsReceivedFromPlayer": [],
+            "weaponKills": {},
+            "teamkills": 0,
+            "teamkillAssistsReceived": 0,
+            "teamkillAssistsGiven": 0,
+            "teamkillAssistsReceivedFromPlayer": [],
+            "weaponTeamkills": {},
+            "selfkills": 0,
+            "deaths": 0,
+            "structuresDestroyed": 0,
+            "structuresCaptured": 0,
+            "objectives": [],
+            "multikills": [],
+            "externalLinks": [
+              {
+                "dataProvider": { "name": "STEAM" },
+                "externalEntity": { "id": "76561198350362302" }
+              }
+            ],
+            "headshots": 0,
+            "teamHeadshots": 0
+          },
+          {
+            "id": "76561198026088156",
+            "statePath": [{ "id": "76561198026088156" }],
+            "name": "Jerry",
+            "participationStatus": "active",
+            "kills": 0,
+            "killAssistsReceived": 0,
+            "killAssistsGiven": 0,
+            "killAssistsReceivedFromPlayer": [],
+            "weaponKills": {},
+            "teamkills": 0,
+            "teamkillAssistsReceived": 0,
+            "teamkillAssistsGiven": 0,
+            "teamkillAssistsReceivedFromPlayer": [],
+            "weaponTeamkills": {},
+            "selfkills": 0,
+            "deaths": 0,
+            "structuresDestroyed": 0,
+            "structuresCaptured": 0,
+            "objectives": [],
+            "multikills": [],
+            "externalLinks": [
+              {
+                "dataProvider": { "name": "STEAM" },
+                "externalEntity": { "id": "76561198026088156" }
+              }
+            ],
+            "headshots": 0,
+            "teamHeadshots": 0
+          }
+        ],
+        "headshots": 0,
+        "teamHeadshots": 0
+      }
+    ],
+    "games": [
+      {
+        "id": "c5c7500c-6db8-45c8-b6ab-2be01b401ef7",
+        "statePath": [{ "id": "c5c7500c-6db8-45c8-b6ab-2be01b401ef7" }],
+        "sequenceNumber": 1,
+        "map": { "name": "inferno" },
+        "started": true,
+        "finished": false,
+        "paused": false,
+        "clock": {
+          "id": "clock",
+          "type": "clock",
+          "ticking": true,
+          "ticksBackwards": true,
+          "currentSeconds": 15,
+          "updatedAt": "2023-05-30T17:56:20.839Z"
+        },
+        "structures": [],
+        "nonPlayerCharacters": [],
+        "teams": [
+          {
+            "id": "3128",
+            "statePath": [{ "id": "3128" }],
+            "name": "ECSTATIC",
+            "side": "counter-terrorists",
+            "won": false,
+            "score": 0,
+            "money": 3700,
+            "inventoryValue": 1300,
+            "netWorth": 5000,
+            "kills": 0,
+            "killAssistsReceived": 0,
+            "killAssistsGiven": 0,
+            "killAssistsReceivedFromPlayer": [],
+            "weaponKills": {},
+            "multikills": [],
+            "teamkills": 0,
+            "teamkillAssistsReceived": 0,
+            "teamkillAssistsGiven": 0,
+            "teamkillAssistsReceivedFromPlayer": [],
+            "weaponTeamkills": {},
+            "selfkills": 0,
+            "deaths": 0,
+            "structuresDestroyed": 0,
+            "structuresCaptured": 0,
+            "objectives": [],
+            "players": [
+              {
+                "id": "76561198030545997",
+                "statePath": [{ "id": "76561198030545997" }],
+                "name": "Queenix",
+                "character": {
+                  "name": "counter-terrorist",
+                  "id": "counter-terrorist"
+                },
+                "participationStatus": "active",
+                "money": 800,
+                "inventoryValue": 200,
+                "netWorth": 1000,
+                "kills": 0,
+                "killAssistsReceived": 0,
+                "killAssistsGiven": 0,
+                "killAssistsReceivedFromPlayer": [],
+                "weaponKills": {},
+                "multikills": [],
+                "teamkills": 0,
+                "teamkillAssistsReceived": 0,
+                "teamkillAssistsGiven": 0,
+                "teamkillAssistsReceivedFromPlayer": [],
+                "weaponTeamkills": {},
+                "selfkills": 0,
+                "deaths": 0,
+                "structuresDestroyed": 0,
+                "structuresCaptured": 0,
+                "items": [
+                  {
+                    "id": "knife",
+                    "statePath": [{ "id": "knife" }],
+                    "equipped": true,
+                    "stashed": false
+                  },
+                  {
+                    "id": "hkp2000",
+                    "statePath": [{ "id": "hkp2000" }],
+                    "equipped": true,
+                    "stashed": false
+                  }
+                ],
+                "objectives": [],
+                "abilities": [],
+                "position": null,
+                "externalLinks": [
+                  {
+                    "dataProvider": { "name": "STEAM" },
+                    "externalEntity": { "id": "76561198030545997" }
+                  }
+                ],
+                "alive": true,
+                "currentArmor": 0,
+                "currentHealth": 100,
+                "damageDealt": 0,
+                "damageTaken": 0,
+                "headshots": 0,
+                "maxHealth": 100,
+                "selfdamageDealt": 0,
+                "selfdamageTaken": 0,
+                "teamdamageDealt": 0,
+                "teamHeadshots": 0,
+                "teamdamageTaken": 0
+              },
+              {
+                "id": "76561198042070812",
+                "statePath": [{ "id": "76561198042070812" }],
+                "name": "maNkz",
+                "character": {
+                  "name": "counter-terrorist",
+                  "id": "counter-terrorist"
+                },
+                "participationStatus": "active",
+                "money": 500,
+                "inventoryValue": 500,
+                "netWorth": 1000,
+                "kills": 0,
+                "killAssistsReceived": 0,
+                "killAssistsGiven": 0,
+                "killAssistsReceivedFromPlayer": [],
+                "weaponKills": {},
+                "multikills": [],
+                "teamkills": 0,
+                "teamkillAssistsReceived": 0,
+                "teamkillAssistsGiven": 0,
+                "teamkillAssistsReceivedFromPlayer": [],
+                "weaponTeamkills": {},
+                "selfkills": 0,
+                "deaths": 0,
+                "structuresDestroyed": 0,
+                "structuresCaptured": 0,
+                "items": [
+                  {
+                    "id": "knife",
+                    "statePath": [{ "id": "knife" }],
+                    "equipped": true,
+                    "stashed": false
+                  },
+                  {
+                    "id": "hkp2000",
+                    "statePath": [{ "id": "hkp2000" }],
+                    "equipped": true,
+                    "stashed": false
+                  },
+                  {
+                    "id": "smokeGrenade",
+                    "statePath": [{ "id": "smokeGrenade" }],
+                    "equipped": true,
+                    "stashed": false
+                  }
+                ],
+                "objectives": [],
+                "abilities": [],
+                "position": null,
+                "externalLinks": [
+                  {
+                    "dataProvider": { "name": "STEAM" },
+                    "externalEntity": { "id": "76561198042070812" }
+                  }
+                ],
+                "alive": true,
+                "currentArmor": 0,
+                "currentHealth": 100,
+                "damageDealt": 0,
+                "damageTaken": 0,
+                "headshots": 0,
+                "maxHealth": 100,
+                "selfdamageDealt": 0,
+                "selfdamageTaken": 0,
+                "teamdamageDealt": 0,
+                "teamHeadshots": 0,
+                "teamdamageTaken": 0
+              },
+              {
+                "id": "76561198070876270",
+                "statePath": [{ "id": "76561198070876270" }],
+                "name": "Nodios",
+                "character": {
+                  "name": "counter-terrorist",
+                  "id": "counter-terrorist"
+                },
+                "participationStatus": "active",
+                "money": 800,
+                "inventoryValue": 200,
+                "netWorth": 1000,
+                "kills": 0,
+                "killAssistsReceived": 0,
+                "killAssistsGiven": 0,
+                "killAssistsReceivedFromPlayer": [],
+                "weaponKills": {},
+                "multikills": [],
+                "teamkills": 0,
+                "teamkillAssistsReceived": 0,
+                "teamkillAssistsGiven": 0,
+                "teamkillAssistsReceivedFromPlayer": [],
+                "weaponTeamkills": {},
+                "selfkills": 0,
+                "deaths": 0,
+                "structuresDestroyed": 0,
+                "structuresCaptured": 0,
+                "items": [
+                  {
+                    "id": "knife",
+                    "statePath": [{ "id": "knife" }],
+                    "equipped": true,
+                    "stashed": false
+                  },
+                  {
+                    "id": "hkp2000",
+                    "statePath": [{ "id": "hkp2000" }],
+                    "equipped": true,
+                    "stashed": false
+                  }
+                ],
+                "objectives": [],
+                "abilities": [],
+                "position": null,
+                "externalLinks": [
+                  {
+                    "dataProvider": { "name": "STEAM" },
+                    "externalEntity": { "id": "76561198070876270" }
+                  }
+                ],
+                "alive": true,
+                "currentArmor": 0,
+                "currentHealth": 100,
+                "damageDealt": 0,
+                "damageTaken": 0,
+                "headshots": 0,
+                "maxHealth": 100,
+                "selfdamageDealt": 0,
+                "selfdamageTaken": 0,
+                "teamdamageDealt": 0,
+                "teamHeadshots": 0,
+                "teamdamageTaken": 0
+              },
+              {
+                "id": "76561198102263776",
+                "statePath": [{ "id": "76561198102263776" }],
+                "name": "salazar",
+                "character": {
+                  "name": "counter-terrorist",
+                  "id": "counter-terrorist"
+                },
+                "participationStatus": "active",
+                "money": 800,
+                "inventoryValue": 200,
+                "netWorth": 1000,
+                "kills": 0,
+                "killAssistsReceived": 0,
+                "killAssistsGiven": 0,
+                "killAssistsReceivedFromPlayer": [],
+                "weaponKills": {},
+                "multikills": [],
+                "teamkills": 0,
+                "teamkillAssistsReceived": 0,
+                "teamkillAssistsGiven": 0,
+                "teamkillAssistsReceivedFromPlayer": [],
+                "weaponTeamkills": {},
+                "selfkills": 0,
+                "deaths": 0,
+                "structuresDestroyed": 0,
+                "structuresCaptured": 0,
+                "items": [
+                  {
+                    "id": "knife",
+                    "statePath": [{ "id": "knife" }],
+                    "equipped": true,
+                    "stashed": false
+                  },
+                  {
+                    "id": "hkp2000",
+                    "statePath": [{ "id": "hkp2000" }],
+                    "equipped": true,
+                    "stashed": false
+                  }
+                ],
+                "objectives": [],
+                "abilities": [],
+                "position": null,
+                "externalLinks": [
+                  {
+                    "dataProvider": { "name": "STEAM" },
+                    "externalEntity": { "id": "76561198102263776" }
+                  }
+                ],
+                "alive": true,
+                "currentArmor": 0,
+                "currentHealth": 100,
+                "damageDealt": 0,
+                "damageTaken": 0,
+                "headshots": 0,
+                "maxHealth": 100,
+                "selfdamageDealt": 0,
+                "selfdamageTaken": 0,
+                "teamdamageDealt": 0,
+                "teamHeadshots": 0,
+                "teamdamageTaken": 0
+              },
+              {
+                "id": "76561198047198945",
+                "statePath": [{ "id": "76561198047198945" }],
+                "name": "kraghen",
+                "character": {
+                  "name": "counter-terrorist",
+                  "id": "counter-terrorist"
+                },
+                "participationStatus": "active",
+                "money": 800,
+                "inventoryValue": 200,
+                "netWorth": 1000,
+                "kills": 0,
+                "killAssistsReceived": 0,
+                "killAssistsGiven": 0,
+                "killAssistsReceivedFromPlayer": [],
+                "weaponKills": {},
+                "multikills": [],
+                "teamkills": 0,
+                "teamkillAssistsReceived": 0,
+                "teamkillAssistsGiven": 0,
+                "teamkillAssistsReceivedFromPlayer": [],
+                "weaponTeamkills": {},
+                "selfkills": 0,
+                "deaths": 0,
+                "structuresDestroyed": 0,
+                "structuresCaptured": 0,
+                "items": [
+                  {
+                    "id": "knife",
+                    "statePath": [{ "id": "knife" }],
+                    "equipped": true,
+                    "stashed": false
+                  },
+                  {
+                    "id": "hkp2000",
+                    "statePath": [{ "id": "hkp2000" }],
+                    "equipped": true,
+                    "stashed": false
+                  }
+                ],
+                "objectives": [],
+                "abilities": [],
+                "position": null,
+                "externalLinks": [
+                  {
+                    "dataProvider": { "name": "STEAM" },
+                    "externalEntity": { "id": "76561198047198945" }
+                  }
+                ],
+                "alive": true,
+                "currentArmor": 0,
+                "currentHealth": 100,
+                "damageDealt": 0,
+                "damageTaken": 0,
+                "headshots": 0,
+                "maxHealth": 100,
+                "selfdamageDealt": 0,
+                "selfdamageTaken": 0,
+                "teamdamageDealt": 0,
+                "teamHeadshots": 0,
+                "teamdamageTaken": 0
+              }
+            ],
+            "damageDealt": 0,
+            "damageTaken": 0,
+            "headshots": 0,
+            "selfdamageDealt": 0,
+            "selfdamageTaken": 0,
+            "teamdamageDealt": 0,
+            "teamHeadshots": 0,
+            "teamdamageTaken": 0
+          },
+          {
+            "id": "47336",
+            "statePath": [{ "id": "47336" }],
+            "name": "forZe",
+            "side": "terrorists",
+            "won": false,
+            "score": 0,
+            "money": 4000,
+            "inventoryValue": 1000,
+            "netWorth": 5000,
+            "kills": 0,
+            "killAssistsReceived": 0,
+            "killAssistsGiven": 0,
+            "killAssistsReceivedFromPlayer": [],
+            "weaponKills": {},
+            "multikills": [],
+            "teamkills": 0,
+            "teamkillAssistsReceived": 0,
+            "teamkillAssistsGiven": 0,
+            "teamkillAssistsReceivedFromPlayer": [],
+            "weaponTeamkills": {},
+            "selfkills": 0,
+            "deaths": 0,
+            "structuresDestroyed": 0,
+            "structuresCaptured": 0,
+            "objectives": [],
+            "players": [
+              {
+                "id": "76561198365697700",
+                "statePath": [{ "id": "76561198365697700" }],
+                "name": "shalfey",
+                "character": { "name": "terrorist", "id": "terrorist" },
+                "participationStatus": "active",
+                "money": 800,
+                "inventoryValue": 200,
+                "netWorth": 1000,
+                "kills": 0,
+                "killAssistsReceived": 0,
+                "killAssistsGiven": 0,
+                "killAssistsReceivedFromPlayer": [],
+                "weaponKills": {},
+                "multikills": [],
+                "teamkills": 0,
+                "teamkillAssistsReceived": 0,
+                "teamkillAssistsGiven": 0,
+                "teamkillAssistsReceivedFromPlayer": [],
+                "weaponTeamkills": {},
+                "selfkills": 0,
+                "deaths": 0,
+                "structuresDestroyed": 0,
+                "structuresCaptured": 0,
+                "items": [
+                  {
+                    "id": "knife",
+                    "statePath": [{ "id": "knife" }],
+                    "equipped": true,
+                    "stashed": false
+                  },
+                  {
+                    "id": "glock",
+                    "statePath": [{ "id": "glock" }],
+                    "equipped": true,
+                    "stashed": false
+                  }
+                ],
+                "objectives": [],
+                "abilities": [],
+                "position": null,
+                "externalLinks": [
+                  {
+                    "dataProvider": { "name": "STEAM" },
+                    "externalEntity": { "id": "76561198365697700" }
+                  }
+                ],
+                "alive": true,
+                "currentArmor": 0,
+                "currentHealth": 100,
+                "damageDealt": 0,
+                "damageTaken": 0,
+                "headshots": 0,
+                "maxHealth": 100,
+                "selfdamageDealt": 0,
+                "selfdamageTaken": 0,
+                "teamdamageDealt": 0,
+                "teamHeadshots": 0,
+                "teamdamageTaken": 0
+              },
+              {
+                "id": "76561198059614402",
+                "statePath": [{ "id": "76561198059614402" }],
+                "name": "zorte",
+                "character": { "name": "terrorist", "id": "terrorist" },
+                "participationStatus": "active",
+                "money": 800,
+                "inventoryValue": 200,
+                "netWorth": 1000,
+                "kills": 0,
+                "killAssistsReceived": 0,
+                "killAssistsGiven": 0,
+                "killAssistsReceivedFromPlayer": [],
+                "weaponKills": {},
+                "multikills": [],
+                "teamkills": 0,
+                "teamkillAssistsReceived": 0,
+                "teamkillAssistsGiven": 0,
+                "teamkillAssistsReceivedFromPlayer": [],
+                "weaponTeamkills": {},
+                "selfkills": 0,
+                "deaths": 0,
+                "structuresDestroyed": 0,
+                "structuresCaptured": 0,
+                "items": [
+                  {
+                    "id": "knife",
+                    "statePath": [{ "id": "knife" }],
+                    "equipped": true,
+                    "stashed": false
+                  },
+                  {
+                    "id": "glock",
+                    "statePath": [{ "id": "glock" }],
+                    "equipped": true,
+                    "stashed": false
+                  }
+                ],
+                "objectives": [],
+                "abilities": [],
+                "position": null,
+                "externalLinks": [
+                  {
+                    "dataProvider": { "name": "STEAM" },
+                    "externalEntity": { "id": "76561198059614402" }
+                  }
+                ],
+                "alive": true,
+                "currentArmor": 0,
+                "currentHealth": 100,
+                "damageDealt": 0,
+                "damageTaken": 0,
+                "headshots": 0,
+                "maxHealth": 100,
+                "selfdamageDealt": 0,
+                "selfdamageTaken": 0,
+                "teamdamageDealt": 0,
+                "teamHeadshots": 0,
+                "teamdamageTaken": 0
+              },
+              {
+                "id": "76561198031908632",
+                "statePath": [{ "id": "76561198031908632" }],
+                "name": "Krad",
+                "character": { "name": "terrorist", "id": "terrorist" },
+                "participationStatus": "active",
+                "money": 800,
+                "inventoryValue": 200,
+                "netWorth": 1000,
+                "kills": 0,
+                "killAssistsReceived": 0,
+                "killAssistsGiven": 0,
+                "killAssistsReceivedFromPlayer": [],
+                "weaponKills": {},
+                "multikills": [],
+                "teamkills": 0,
+                "teamkillAssistsReceived": 0,
+                "teamkillAssistsGiven": 0,
+                "teamkillAssistsReceivedFromPlayer": [],
+                "weaponTeamkills": {},
+                "selfkills": 0,
+                "deaths": 0,
+                "structuresDestroyed": 0,
+                "structuresCaptured": 0,
+                "items": [
+                  {
+                    "id": "knife",
+                    "statePath": [{ "id": "knife" }],
+                    "equipped": true,
+                    "stashed": false
+                  },
+                  {
+                    "id": "glock",
+                    "statePath": [{ "id": "glock" }],
+                    "equipped": true,
+                    "stashed": false
+                  },
+                  {
+                    "id": "bomb",
+                    "statePath": [{ "id": "bomb" }],
+                    "equipped": true,
+                    "stashed": false
+                  }
+                ],
+                "objectives": [],
+                "abilities": [],
+                "position": null,
+                "externalLinks": [
+                  {
+                    "dataProvider": { "name": "STEAM" },
+                    "externalEntity": { "id": "76561198031908632" }
+                  }
+                ],
+                "alive": true,
+                "currentArmor": 0,
+                "currentHealth": 100,
+                "damageDealt": 0,
+                "damageTaken": 0,
+                "headshots": 0,
+                "maxHealth": 100,
+                "selfdamageDealt": 0,
+                "selfdamageTaken": 0,
+                "teamdamageDealt": 0,
+                "teamHeadshots": 0,
+                "teamdamageTaken": 0
+              },
+              {
+                "id": "76561198350362302",
+                "statePath": [{ "id": "76561198350362302" }],
+                "name": "r3salt",
+                "character": { "name": "terrorist", "id": "terrorist" },
+                "participationStatus": "active",
+                "money": 800,
+                "inventoryValue": 200,
+                "netWorth": 1000,
+                "kills": 0,
+                "killAssistsReceived": 0,
+                "killAssistsGiven": 0,
+                "killAssistsReceivedFromPlayer": [],
+                "weaponKills": {},
+                "multikills": [],
+                "teamkills": 0,
+                "teamkillAssistsReceived": 0,
+                "teamkillAssistsGiven": 0,
+                "teamkillAssistsReceivedFromPlayer": [],
+                "weaponTeamkills": {},
+                "selfkills": 0,
+                "deaths": 0,
+                "structuresDestroyed": 0,
+                "structuresCaptured": 0,
+                "items": [
+                  {
+                    "id": "knife",
+                    "statePath": [{ "id": "knife" }],
+                    "equipped": true,
+                    "stashed": false
+                  },
+                  {
+                    "id": "glock",
+                    "statePath": [{ "id": "glock" }],
+                    "equipped": true,
+                    "stashed": false
+                  }
+                ],
+                "objectives": [],
+                "abilities": [],
+                "position": null,
+                "externalLinks": [
+                  {
+                    "dataProvider": { "name": "STEAM" },
+                    "externalEntity": { "id": "76561198350362302" }
+                  }
+                ],
+                "alive": true,
+                "currentArmor": 0,
+                "currentHealth": 100,
+                "damageDealt": 0,
+                "damageTaken": 0,
+                "headshots": 0,
+                "maxHealth": 100,
+                "selfdamageDealt": 0,
+                "selfdamageTaken": 0,
+                "teamdamageDealt": 0,
+                "teamHeadshots": 0,
+                "teamdamageTaken": 0
+              },
+              {
+                "id": "76561198026088156",
+                "statePath": [{ "id": "76561198026088156" }],
+                "name": "Jerry",
+                "character": { "name": "terrorist", "id": "terrorist" },
+                "participationStatus": "active",
+                "money": 800,
+                "inventoryValue": 200,
+                "netWorth": 1000,
+                "kills": 0,
+                "killAssistsReceived": 0,
+                "killAssistsGiven": 0,
+                "killAssistsReceivedFromPlayer": [],
+                "weaponKills": {},
+                "multikills": [],
+                "teamkills": 0,
+                "teamkillAssistsReceived": 0,
+                "teamkillAssistsGiven": 0,
+                "teamkillAssistsReceivedFromPlayer": [],
+                "weaponTeamkills": {},
+                "selfkills": 0,
+                "deaths": 0,
+                "structuresDestroyed": 0,
+                "structuresCaptured": 0,
+                "items": [
+                  {
+                    "id": "knife",
+                    "statePath": [{ "id": "knife" }],
+                    "equipped": true,
+                    "stashed": false
+                  },
+                  {
+                    "id": "glock",
+                    "statePath": [{ "id": "glock" }],
+                    "equipped": true,
+                    "stashed": false
+                  }
+                ],
+                "objectives": [],
+                "abilities": [],
+                "position": null,
+                "externalLinks": [
+                  {
+                    "dataProvider": { "name": "STEAM" },
+                    "externalEntity": { "id": "76561198026088156" }
+                  }
+                ],
+                "alive": true,
+                "currentArmor": 0,
+                "currentHealth": 100,
+                "damageDealt": 0,
+                "damageTaken": 0,
+                "headshots": 0,
+                "maxHealth": 100,
+                "selfdamageDealt": 0,
+                "selfdamageTaken": 0,
+                "teamdamageDealt": 0,
+                "teamHeadshots": 0,
+                "teamdamageTaken": 0
+              }
+            ],
+            "damageDealt": 0,
+            "damageTaken": 0,
+            "headshots": 0,
+            "selfdamageDealt": 0,
+            "selfdamageTaken": 0,
+            "teamdamageDealt": 0,
+            "teamHeadshots": 0,
+            "teamdamageTaken": 0
+          }
+        ],
+        "segments": [
+          {
+            "id": "round-1",
+            "statePath": [{ "id": "round-1" }],
+            "type": "round",
+            "sequenceNumber": 1,
+            "started": true,
+            "finished": false,
+            "teams": [
+              {
+                "id": "3128",
+                "statePath": [{ "id": "3128" }],
+                "name": "ECSTATIC",
+                "side": "counter-terrorists",
+                "won": false,
+                "kills": 0,
+                "killAssistsReceived": 0,
+                "killAssistsGiven": 0,
+                "killAssistsReceivedFromPlayer": [],
+                "weaponKills": {},
+                "teamkills": 0,
+                "teamkillAssistsReceived": 0,
+                "teamkillAssistsGiven": 0,
+                "teamkillAssistsReceivedFromPlayer": [],
+                "weaponTeamkills": {},
+                "selfkills": 0,
+                "deaths": 0,
+                "objectives": [],
+                "players": [
+                  {
+                    "id": "76561198030545997",
+                    "statePath": [{ "id": "76561198030545997" }],
+                    "segmentType": "round",
+                    "name": "Queenix",
+                    "kills": 0,
+                    "killAssistsReceived": 0,
+                    "killAssistsGiven": 0,
+                    "killAssistsReceivedFromPlayer": [],
+                    "weaponKills": {},
+                    "teamkills": 0,
+                    "teamkillAssistsReceived": 0,
+                    "teamkillAssistsGiven": 0,
+                    "teamkillAssistsReceivedFromPlayer": [],
+                    "weaponTeamkills": {},
+                    "selfkills": 0,
+                    "deaths": 0,
+                    "objectives": [],
+                    "externalLinks": [
+                      {
+                        "dataProvider": { "name": "STEAM" },
+                        "externalEntity": { "id": "76561198030545997" }
+                      }
+                    ],
+                    "alive": true,
+                    "currentArmor": 0,
+                    "currentHealth": 100,
+                    "damageDealt": 0,
+                    "damageTaken": 0,
+                    "headshots": 0,
+                    "maxHealth": 100,
+                    "selfdamageDealt": 0,
+                    "selfdamageTaken": 0,
+                    "teamdamageDealt": 0,
+                    "teamHeadshots": 0,
+                    "teamdamageTaken": 0
+                  },
+                  {
+                    "id": "76561198042070812",
+                    "statePath": [{ "id": "76561198042070812" }],
+                    "segmentType": "round",
+                    "name": "maNkz",
+                    "kills": 0,
+                    "killAssistsReceived": 0,
+                    "killAssistsGiven": 0,
+                    "killAssistsReceivedFromPlayer": [],
+                    "weaponKills": {},
+                    "teamkills": 0,
+                    "teamkillAssistsReceived": 0,
+                    "teamkillAssistsGiven": 0,
+                    "teamkillAssistsReceivedFromPlayer": [],
+                    "weaponTeamkills": {},
+                    "selfkills": 0,
+                    "deaths": 0,
+                    "objectives": [],
+                    "externalLinks": [
+                      {
+                        "dataProvider": { "name": "STEAM" },
+                        "externalEntity": { "id": "76561198042070812" }
+                      }
+                    ],
+                    "alive": true,
+                    "currentArmor": 0,
+                    "currentHealth": 100,
+                    "damageDealt": 0,
+                    "damageTaken": 0,
+                    "headshots": 0,
+                    "maxHealth": 100,
+                    "selfdamageDealt": 0,
+                    "selfdamageTaken": 0,
+                    "teamdamageDealt": 0,
+                    "teamHeadshots": 0,
+                    "teamdamageTaken": 0
+                  },
+                  {
+                    "id": "76561198070876270",
+                    "statePath": [{ "id": "76561198070876270" }],
+                    "segmentType": "round",
+                    "name": "Nodios",
+                    "kills": 0,
+                    "killAssistsReceived": 0,
+                    "killAssistsGiven": 0,
+                    "killAssistsReceivedFromPlayer": [],
+                    "weaponKills": {},
+                    "teamkills": 0,
+                    "teamkillAssistsReceived": 0,
+                    "teamkillAssistsGiven": 0,
+                    "teamkillAssistsReceivedFromPlayer": [],
+                    "weaponTeamkills": {},
+                    "selfkills": 0,
+                    "deaths": 0,
+                    "objectives": [],
+                    "externalLinks": [
+                      {
+                        "dataProvider": { "name": "STEAM" },
+                        "externalEntity": { "id": "76561198070876270" }
+                      }
+                    ],
+                    "alive": true,
+                    "currentArmor": 0,
+                    "currentHealth": 100,
+                    "damageDealt": 0,
+                    "damageTaken": 0,
+                    "headshots": 0,
+                    "maxHealth": 100,
+                    "selfdamageDealt": 0,
+                    "selfdamageTaken": 0,
+                    "teamdamageDealt": 0,
+                    "teamHeadshots": 0,
+                    "teamdamageTaken": 0
+                  },
+                  {
+                    "id": "76561198102263776",
+                    "statePath": [{ "id": "76561198102263776" }],
+                    "segmentType": "round",
+                    "name": "salazar",
+                    "kills": 0,
+                    "killAssistsReceived": 0,
+                    "killAssistsGiven": 0,
+                    "killAssistsReceivedFromPlayer": [],
+                    "weaponKills": {},
+                    "teamkills": 0,
+                    "teamkillAssistsReceived": 0,
+                    "teamkillAssistsGiven": 0,
+                    "teamkillAssistsReceivedFromPlayer": [],
+                    "weaponTeamkills": {},
+                    "selfkills": 0,
+                    "deaths": 0,
+                    "objectives": [],
+                    "externalLinks": [
+                      {
+                        "dataProvider": { "name": "STEAM" },
+                        "externalEntity": { "id": "76561198102263776" }
+                      }
+                    ],
+                    "alive": true,
+                    "currentArmor": 0,
+                    "currentHealth": 100,
+                    "damageDealt": 0,
+                    "damageTaken": 0,
+                    "headshots": 0,
+                    "maxHealth": 100,
+                    "selfdamageDealt": 0,
+                    "selfdamageTaken": 0,
+                    "teamdamageDealt": 0,
+                    "teamHeadshots": 0,
+                    "teamdamageTaken": 0
+                  },
+                  {
+                    "id": "76561198047198945",
+                    "statePath": [{ "id": "76561198047198945" }],
+                    "segmentType": "round",
+                    "name": "kraghen",
+                    "kills": 0,
+                    "killAssistsReceived": 0,
+                    "killAssistsGiven": 0,
+                    "killAssistsReceivedFromPlayer": [],
+                    "weaponKills": {},
+                    "teamkills": 0,
+                    "teamkillAssistsReceived": 0,
+                    "teamkillAssistsGiven": 0,
+                    "teamkillAssistsReceivedFromPlayer": [],
+                    "weaponTeamkills": {},
+                    "selfkills": 0,
+                    "deaths": 0,
+                    "objectives": [],
+                    "externalLinks": [
+                      {
+                        "dataProvider": { "name": "STEAM" },
+                        "externalEntity": { "id": "76561198047198945" }
+                      }
+                    ],
+                    "alive": true,
+                    "currentArmor": 0,
+                    "currentHealth": 100,
+                    "damageDealt": 0,
+                    "damageTaken": 0,
+                    "headshots": 0,
+                    "maxHealth": 100,
+                    "selfdamageDealt": 0,
+                    "selfdamageTaken": 0,
+                    "teamdamageDealt": 0,
+                    "teamHeadshots": 0,
+                    "teamdamageTaken": 0
+                  }
+                ],
+                "damageDealt": 0,
+                "damageTaken": 0,
+                "headshots": 0,
+                "selfdamageDealt": 0,
+                "selfdamageTaken": 0,
+                "teamdamageDealt": 0,
+                "teamHeadshots": 0,
+                "teamdamageTaken": 0,
+                "winType": ""
+              },
+              {
+                "id": "47336",
+                "statePath": [{ "id": "47336" }],
+                "name": "forZe",
+                "side": "terrorists",
+                "won": false,
+                "kills": 0,
+                "killAssistsReceived": 0,
+                "killAssistsGiven": 0,
+                "killAssistsReceivedFromPlayer": [],
+                "weaponKills": {},
+                "teamkills": 0,
+                "teamkillAssistsReceived": 0,
+                "teamkillAssistsGiven": 0,
+                "teamkillAssistsReceivedFromPlayer": [],
+                "weaponTeamkills": {},
+                "selfkills": 0,
+                "deaths": 0,
+                "objectives": [],
+                "players": [
+                  {
+                    "id": "76561198365697700",
+                    "statePath": [{ "id": "76561198365697700" }],
+                    "segmentType": "round",
+                    "name": "shalfey",
+                    "kills": 0,
+                    "killAssistsReceived": 0,
+                    "killAssistsGiven": 0,
+                    "killAssistsReceivedFromPlayer": [],
+                    "weaponKills": {},
+                    "teamkills": 0,
+                    "teamkillAssistsReceived": 0,
+                    "teamkillAssistsGiven": 0,
+                    "teamkillAssistsReceivedFromPlayer": [],
+                    "weaponTeamkills": {},
+                    "selfkills": 0,
+                    "deaths": 0,
+                    "objectives": [],
+                    "externalLinks": [
+                      {
+                        "dataProvider": { "name": "STEAM" },
+                        "externalEntity": { "id": "76561198365697700" }
+                      }
+                    ],
+                    "alive": true,
+                    "currentArmor": 0,
+                    "currentHealth": 100,
+                    "damageDealt": 0,
+                    "damageTaken": 0,
+                    "headshots": 0,
+                    "maxHealth": 100,
+                    "selfdamageDealt": 0,
+                    "selfdamageTaken": 0,
+                    "teamdamageDealt": 0,
+                    "teamHeadshots": 0,
+                    "teamdamageTaken": 0
+                  },
+                  {
+                    "id": "76561198059614402",
+                    "statePath": [{ "id": "76561198059614402" }],
+                    "segmentType": "round",
+                    "name": "zorte",
+                    "kills": 0,
+                    "killAssistsReceived": 0,
+                    "killAssistsGiven": 0,
+                    "killAssistsReceivedFromPlayer": [],
+                    "weaponKills": {},
+                    "teamkills": 0,
+                    "teamkillAssistsReceived": 0,
+                    "teamkillAssistsGiven": 0,
+                    "teamkillAssistsReceivedFromPlayer": [],
+                    "weaponTeamkills": {},
+                    "selfkills": 0,
+                    "deaths": 0,
+                    "objectives": [],
+                    "externalLinks": [
+                      {
+                        "dataProvider": { "name": "STEAM" },
+                        "externalEntity": { "id": "76561198059614402" }
+                      }
+                    ],
+                    "alive": true,
+                    "currentArmor": 0,
+                    "currentHealth": 100,
+                    "damageDealt": 0,
+                    "damageTaken": 0,
+                    "headshots": 0,
+                    "maxHealth": 100,
+                    "selfdamageDealt": 0,
+                    "selfdamageTaken": 0,
+                    "teamdamageDealt": 0,
+                    "teamHeadshots": 0,
+                    "teamdamageTaken": 0
+                  },
+                  {
+                    "id": "76561198031908632",
+                    "statePath": [{ "id": "76561198031908632" }],
+                    "segmentType": "round",
+                    "name": "Krad",
+                    "kills": 0,
+                    "killAssistsReceived": 0,
+                    "killAssistsGiven": 0,
+                    "killAssistsReceivedFromPlayer": [],
+                    "weaponKills": {},
+                    "teamkills": 0,
+                    "teamkillAssistsReceived": 0,
+                    "teamkillAssistsGiven": 0,
+                    "teamkillAssistsReceivedFromPlayer": [],
+                    "weaponTeamkills": {},
+                    "selfkills": 0,
+                    "deaths": 0,
+                    "objectives": [],
+                    "externalLinks": [
+                      {
+                        "dataProvider": { "name": "STEAM" },
+                        "externalEntity": { "id": "76561198031908632" }
+                      }
+                    ],
+                    "alive": true,
+                    "currentArmor": 0,
+                    "currentHealth": 100,
+                    "damageDealt": 0,
+                    "damageTaken": 0,
+                    "headshots": 0,
+                    "maxHealth": 100,
+                    "selfdamageDealt": 0,
+                    "selfdamageTaken": 0,
+                    "teamdamageDealt": 0,
+                    "teamHeadshots": 0,
+                    "teamdamageTaken": 0
+                  },
+                  {
+                    "id": "76561198350362302",
+                    "statePath": [{ "id": "76561198350362302" }],
+                    "segmentType": "round",
+                    "name": "r3salt",
+                    "kills": 0,
+                    "killAssistsReceived": 0,
+                    "killAssistsGiven": 0,
+                    "killAssistsReceivedFromPlayer": [],
+                    "weaponKills": {},
+                    "teamkills": 0,
+                    "teamkillAssistsReceived": 0,
+                    "teamkillAssistsGiven": 0,
+                    "teamkillAssistsReceivedFromPlayer": [],
+                    "weaponTeamkills": {},
+                    "selfkills": 0,
+                    "deaths": 0,
+                    "objectives": [],
+                    "externalLinks": [
+                      {
+                        "dataProvider": { "name": "STEAM" },
+                        "externalEntity": { "id": "76561198350362302" }
+                      }
+                    ],
+                    "alive": true,
+                    "currentArmor": 0,
+                    "currentHealth": 100,
+                    "damageDealt": 0,
+                    "damageTaken": 0,
+                    "headshots": 0,
+                    "maxHealth": 100,
+                    "selfdamageDealt": 0,
+                    "selfdamageTaken": 0,
+                    "teamdamageDealt": 0,
+                    "teamHeadshots": 0,
+                    "teamdamageTaken": 0
+                  },
+                  {
+                    "id": "76561198026088156",
+                    "statePath": [{ "id": "76561198026088156" }],
+                    "segmentType": "round",
+                    "name": "Jerry",
+                    "kills": 0,
+                    "killAssistsReceived": 0,
+                    "killAssistsGiven": 0,
+                    "killAssistsReceivedFromPlayer": [],
+                    "weaponKills": {},
+                    "teamkills": 0,
+                    "teamkillAssistsReceived": 0,
+                    "teamkillAssistsGiven": 0,
+                    "teamkillAssistsReceivedFromPlayer": [],
+                    "weaponTeamkills": {},
+                    "selfkills": 0,
+                    "deaths": 0,
+                    "objectives": [],
+                    "externalLinks": [
+                      {
+                        "dataProvider": { "name": "STEAM" },
+                        "externalEntity": { "id": "76561198026088156" }
+                      }
+                    ],
+                    "alive": true,
+                    "currentArmor": 0,
+                    "currentHealth": 100,
+                    "damageDealt": 0,
+                    "damageTaken": 0,
+                    "headshots": 0,
+                    "maxHealth": 100,
+                    "selfdamageDealt": 0,
+                    "selfdamageTaken": 0,
+                    "teamdamageDealt": 0,
+                    "teamHeadshots": 0,
+                    "teamdamageTaken": 0
+                  }
+                ],
+                "damageDealt": 0,
+                "damageTaken": 0,
+                "headshots": 0,
+                "selfdamageDealt": 0,
+                "selfdamageTaken": 0,
+                "teamdamageDealt": 0,
+                "teamHeadshots": 0,
+                "teamdamageTaken": 0,
+                "winType": ""
+              }
+            ],
+            "segments": [
+              {
+                "id": "freezetime-1",
+                "statePath": [{ "id": "freezetime-1" }],
+                "type": "freezetime",
+                "sequenceNumber": 1,
+                "started": true,
+                "finished": false,
+                "teams": [],
+                "segments": [],
+                "draftActions": []
+              }
+            ],
+            "draftActions": []
+          }
+        ],
+        "draftActions": []
+      }
+    ],
+    "draftActions": []
+  }
+}

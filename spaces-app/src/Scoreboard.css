@@ -1,0 +1,107 @@
+/* Main scoreboard container styling */
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:#222;
+  border-radius: 15px;
+  padding: 10px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-self:center;
+}
+
+/* Team side (left and right) styling */
+.team-side {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* Match counter styling */
+.match-count {
+  flex-basis: 60px; /* Adjust as needed */
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Player card individual styling */
+.player-card {
+  flex-basis: calc(20% - 10px); /* Five players, minus margin */
+  margin: 0 5px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Player image styling */
+.player-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Unique color bar for players */
+.color-bar {
+  height: 2px;
+  width: 100%;
+}
+
+/* Player name and stats styling */
+.player-name,
+.player-stats,
+.round-stats {
+  text-align: center;
+  color: #000000;
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Health bar styling */
+.health-bar {
+  /* width: 90%; Or adjust as needed */
+  height: 20px;
+  margin: 5px auto;
+  background-color: red;
+  position: relative;
+}
+
+.health-bar > div {
+  height: 100%;
+  width: 100%; /* This width should be adjusted dynamically based on player health */
+  background-color: green;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Bullet and injury image styling */
+.bullet-image,
+.injury-image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.2;
+}
+
+.bullet-image.highlighted,
+.injury-image.highlighted {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}

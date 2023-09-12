@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Round" ALTER COLUMN "roundLastedTime" SET DATA TYPE DOUBLE PRECISION;

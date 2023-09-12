@@ -1,0 +1,442 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Player{
+playerId String @id @unique
+passwordHash String @unique
+profilePic String
+name String @unique
+numberOfMatches Int @default(0)
+numberOfRounds Int @default(0)
+kills Int @default(0)
+deaths Int @default(0)
+killAssistsReceived Int @default(0)
+killAssistsGiven Int @default(0)
+selfKills Int @default(0)
+headshots Int @default(0)
+overallViewTime Float @default(0)
+tournamentReach Float @default(0)
+overallRoundEstimatedViewTime Float @default(0)
+overallMomentsViewTime Float @default(0)
+overallPercentageOfOpponentTeamKilled Float @default(0)
+overallRoundViewPercentage Float @default(0)
+overallDamageDealt Int @default(0)
+overallDamageTaken Int @default(0)
+playerRoundStats PlayerRoundStats[]
+weaponKills Json?
+overallAce Int @default(0)
+overallClutch Int @default(0)
+matches PlayerOnMatch[]
+auctions Auction[]
+sponsorTenureStats SponsorTenureStats[]
+team Team @relation(fields:[teamId], references:[teamId])
+teamId String
+playerCard PlayerCard[]
+scoreboardPlayerCard ScoreboardPlayerCard[]
+}
+
+model SponsorTenureStats{
+sponsorTenureStatsId String @id @unique @default(cuid())
+auction Auction?
+numberOfMatches Int @default(0)
+numberOfRounds Int @default(0)
+kills Int @default(0)
+deaths Int @default(0)
+killAssistsReceived Int @default(0)
+killAssistsGiven Int @default(0)
+selfKills Int @default(0)
+headshots Int @default(0)
+overallViewTime Float @default(0)
+tournamentReach Float @default(0)
+overallRoundEstimatedViewTime Float @default(0)
+overallMomentsViewTime Float @default(0)
+overallPercentageOfOpponentTeamKilled Float @default(0)
+overallRoundViewPercentage Float @default(0)
+overallDamageDealt Int @default(0)
+overallDamageTaken Int @default(0)
+weaponKills Json?
+overallAce Int @default(0)
+overallClutch Int @default(0)
+teamId String?
+player Player @relation(fields: [playerId],   references: [playerId])
+playerId String @unique
+}
+
+model Team{
+teamId String @id @unique  
+name String
+kills Int @default(0)
+deaths Int @default(0)
+headshots Int @default(0)
+overallViewTime Int @default(0)
+overallViewPercentage Int @default(0)
+overallDamageDealt Int @default(0)
+overallDamageTaken Int @default(0)
+teamRoundStats TeamRoundStats[]
+weaponKills Json?
+overallAce Int @default(0)
+overallClutch Int @default(0)
+matches TeamOnMatch[]
+players Player[]
+}
+
+model Round{
+roundId String @id @unique
+match Match @relation(fields: [matchId],   references: [matchId])
+matchId String
+events Event[]
+roundLastedTime Float?
+playerRoundStats PlayerRoundStats[]
+teamRoundStats TeamRoundStats[]
+}
+
+model Tournament{
+  tournamentId String @id @unique
+  format String
+  matches Match[]
+}
+
+model Match{
+matchId String @id @unique
+tournament Tournament @relation(fields: [tournamentId],   references: [tournamentId])
+tournamentId String
+rounds Round[]
+teams TeamOnMatch[]
+players PlayerOnMatch[] 
+scoreboard ScoreBoard?
+}
+
+model ScoreBoard{
+scoreBoardId String @id @unique @default(cuid())
+match Match? @relation(fields:[matchId], references: [matchId])
+matchId String? @unique
+scoreboardPlayerCard ScoreboardPlayerCard[]
+roundsWonTeamA Int @default(0)
+teamAId String
+teamAName String
+roundsWonTeamB Int @default(0)
+teamBId String
+teamBName String
+wonTeamId String?
+bombPlanted Boolean @default(false)
+bombExploded Boolean @default(false)
+bombDiffused Boolean @default(false)
+scoreBoardViewTime Int @default(0)
+}
+
+model ScoreboardPlayerCard{
+scoreboardPlayerCardId String @id @unique @default(cuid())
+scoreBoard ScoreBoard @relation(fields:[scoreBoardId], references: [scoreBoardId])
+scoreBoardId String
+player Player @relation(fields:[playerId], references: [playerId])
+playerId String
+kills Int @default(0)
+deaths Int @default(0)
+assists Int @default(0)
+health Int @default(100)
+alive Boolean @default(true)
+armor Int @default(100)
+itemsOwned Json?
+teamId String
+damageDealtInstant Boolean @default(false)
+damageTakenInstant Boolean @default(false)
+bombDefusing Boolean @default(false)
+}
+
+model PlayerOnMatch{
+player Player @relation(fields:[playerId], references: [playerId])
+playerId String
+match Match @relation(fields:[matchId], references: [matchId])
+matchId String
+@@id([playerId,matchId])
+}
+
+model TeamOnMatch{
+team Team @relation(fields:[teamId], references: [teamId])
+teamId String
+match Match @relation(fields:[matchId], references: [matchId])
+matchId String
+@@id([teamId,matchId])
+}
+
+model PlayerRoundStats{
+id String @id @unique @default(cuid())
+playerViewTime Int @default(0)
+LastPersonStandingTime Float @default(0)
+viewTimePercentage String?
+Ace Boolean @default(false)
+Clutch Boolean @default(false)
+percentageOppTeamkilled Float @default(0.0)
+kills Int @default(0)
+killAssistsReceived Int @default(0)
+killAssistsGiven Int @default(0)
+selfKills Int @default(0)
+deaths Int @default(0)
+headshots Int @default(0)
+damageDealt Int @default(0)
+damageTaken Int @default(0)
+teamDamageDealt Int @default(0)
+teamDamageTaken Int @default(0)
+teamKills Int @default(0)
+weaponKills Json?
+round Round @relation(fields: [roundId],   references: [roundId])
+roundId String
+player Player @relation(fields:[playerId], references:[playerId])
+playerId String
+estimatedViewTime Float @default(0)
+}
+
+model TeamRoundStats{
+id String @id @unique @default(cuid())
+teamViewTime Int @default(0)
+viewTimePercentage String?
+side String
+won Boolean @default(false)
+winType String?
+kills Int @default(0)
+deaths Int @default(0)
+damageDealt Int @default(0)
+damageTaken Int @default(0)
+teamDamageOccured Int @default(0)
+teamKillsOccured Int @default(0)
+selfKills Int @default(0)
+weaponKills Json?
+headshots Int @default(0)
+round Round @relation(fields: [roundId],   references: [roundId])
+roundId String
+team Team @relation(fields:[teamId], references:[teamId])
+teamId String
+estimatedViewTime Float @default(0)
+}
+
+model Event{
+eventId String @unique
+eventType EventType
+matchId String
+round Round @relation(fields: [roundId],   references: [roundId])
+roundId String
+timestamp String
+playerDamagedPlayerEvent  PlayerDamagedPlayerEvent? 
+playerKilledPlayerEvent PlayerKilledPlayerEvent?
+playerCompletedDefuseBombEvent PlayerCompletedDefuseBombEvent?
+playerCompletedExplodeBombEvent PlayerCompletedExplodeBombEvent?
+playerCompletedPlantBombEvent PlayerCompletedPlantBombEvent?
+playerCompletedBeginDefuseWithKitEvent PlayerCompletedBeginDefuseWithKitEvent?
+playerCompletedBeginDefuseWithoutKitEvent PlayerCompletedBeginDefuseWithoutKitEvent?
+playerSelfKilledPlayerEvent PlayerSelfKilledPlayerEvent?
+playerSelfDamagedPlayerEvent PlayerSelfDamagedPlayerEvent?
+playerTeamKilledPlayerEvent PlayerTeamKilledPlayerEvent?
+playerTeamDamagedPlayerEvent PlayerTeamDamagedPlayerEvent?
+seriesStartedGameEvent SeriesStartedGameEvent?
+gameStartedRoundEvent GameStartedRoundEvent?
+gameEndedRoundEvent GameEndedRoundEvent? 
+}
+
+model SeriesStartedGameEvent{
+seriesStartedGameEventId String @unique @default(cuid())
+event Event @relation(fields: [eventId],   references: [eventId])
+eventId String @unique
+gameIdStarted String
+}
+
+model GameStartedRoundEvent{
+gameStartedRoundEventId String @unique @default(cuid())
+event Event @relation(fields: [eventId],   references: [eventId])
+eventId String @unique
+roundIdStarted String
+}
+
+model GameEndedRoundEvent{
+gameEndedRoundEventId String @unique @default(cuid())
+event Event @relation(fields: [eventId],   references: [eventId])
+eventId String @unique
+roundIdEnded String
+}
+
+model PlayerSelfDamagedPlayerEvent{
+playerSelfDamagedPlayerEventId String @unique @default(cuid())
+event Event @relation(fields: [eventId],   references: [eventId])
+eventId String @unique
+actorPlayerId String 
+damageDealt Int 
+}
+
+model PlayerTeamDamagedPlayerEvent{
+playerTeamDamagedPlayerEventId String @unique @default(cuid())
+event Event @relation(fields: [eventId],   references: [eventId])
+eventId String @unique
+actorPlayerId String 
+targetPlayerId String
+damageDealt Int
+}
+
+model PlayerTeamKilledPlayerEvent{
+playerTeamKilledPlayerEventId String @unique @default(cuid())
+event Event @relation(fields: [eventId],   references: [eventId])
+eventId String @unique
+actorPlayerId String
+targetPlayerId String 
+}
+
+model PlayerSelfKilledPlayerEvent{
+playerSelfKilledPlayerEventId String @unique @default(cuid())
+event Event @relation(fields: [eventId],   references: [eventId])
+eventId String @unique
+actorPlayerId String 
+}
+
+model PlayerDamagedPlayerEvent{
+playerDamagedPlayerEventId String @unique @default(cuid())
+event Event @relation(fields: [eventId],   references: [eventId])
+eventId String @unique
+actorPlayerId String 
+targetPlayerId String
+damageDealt Int
+}
+
+model PlayerKilledPlayerEvent{
+playerKilledPlayerEventId String @unique @default(cuid())
+event Event @relation(fields: [eventId],   references: [eventId])
+eventId String @unique
+actorPlayerId String 
+targetPlayerId String
+weaponKills Json
+headShot Int @default(0)
+}
+
+model PlayerCompletedDefuseBombEvent{
+playerCompletedDefuseBombEventId String @unique @default(cuid())
+event Event @relation(fields: [eventId],   references: [eventId])
+eventId String @unique
+actorPlayerId String 
+}
+
+model PlayerCompletedExplodeBombEvent{
+playerCompletedExplodeBombEventId String @unique @default(cuid())
+event Event @relation(fields: [eventId],   references: [eventId])
+eventId String @unique
+actorPlayerId String 
+}
+
+model PlayerCompletedPlantBombEvent{
+playerCompletedPlantBombEventId String @unique @default(cuid())
+event Event @relation(fields: [eventId],   references: [eventId])
+eventId String @unique
+actorPlayerId String 
+}
+
+model PlayerCompletedBeginDefuseWithKitEvent{
+playerCompletedBeginDefuseWithKitId String @unique @default(cuid())
+event Event @relation(fields: [eventId],   references: [eventId])
+eventId String @unique
+actorPlayerId String 
+}
+
+model PlayerCompletedBeginDefuseWithoutKitEvent{
+playerCompletedBeginDefuseWithoutKitId String @unique @default(cuid())
+event Event @relation(fields: [eventId],   references: [eventId])
+eventId String @unique
+actorPlayerId String 
+}
+
+model Auction{
+auctionId String @id @unique @default(cuid())
+startDate String
+endDate String
+tenureStartDate String
+auctionStatus String
+term Int
+winningBidValue Int @default(0)
+winningSponsor Sponsor? @relation(fields:[sponsorId], references: [sponsorId])
+sponsorId String?
+winningSponsorTenureStats SponsorTenureStats? @relation(fields:[sponsorTenureStatsId], references: [sponsorTenureStatsId])
+sponsorTenureStatsId String? @unique
+sponsorsParticipated SponsorOnAuction[]
+bids Bid[]
+player Player @relation(fields:[playerId], references: [playerId])
+playerId String
+}
+
+model Sponsor{
+sponsorId String @id @unique @default(cuid())
+passwordHash String? @unique
+auctionsWon Auction[]
+sponsorName String @unique
+participatedAuctions SponsorOnAuction[]
+bids Bid[]
+}
+
+
+model SponsorOnAuction{
+sponsor Sponsor @relation(fields:[sponsorId], references: [sponsorId])
+sponsorId String
+auction Auction @relation(fields:[auctionId], references: [auctionId])
+auctionId String
+@@id([sponsorId,auctionId])
+}
+
+
+model Bid{
+bidId String @id @unique @default(cuid())
+auction Auction @relation(fields:[auctionId], references: [auctionId])
+auctionId String
+sponsor Sponsor @relation(fields:[sponsorId], references: [sponsorId])
+sponsorId String
+bidValue Int @default(0)
+winnerBid Boolean @default(false)
+}
+
+model TournametEvent{
+eventId String @id @unique @default(cuid())
+name String
+startDate String
+endDate String
+averageViewsAchieved Int
+averageConcurrentViewersOfStream Int
+}
+
+model PlayerCard{
+id String @id @unique @default(cuid())
+player Player @relation(fields:[playerId], references:[playerId])
+playerId String
+averageEstimatedPlayerViewTime Float @default(0)
+averageLastManStandingTime Float @default(0)
+averageDamageDealt Float @default(0)
+averagePercentOpponentTeamKilled Float @default(0)
+totalNumberOfAces Int @default(0)
+totalNumberOfClutches Int @default(0)
+totalNumberOfKills Int @default(0)
+totalNumberOfHeadshots Int @default(0)
+numberOfRoundsPlayed Int @default(0)
+numberOfMatchesPlayed Int @default(0)
+playerDamageKillInformationIndex Float @default(0)
+playerKillKillInformationIndex Float @default(0)
+damageKillKeyMomentCount Int @default(0)
+damageKillKeyMomentTotalTime Float @default(0)
+killKillKeyMomentCount Int @default(0)
+killKillKeyMomentTotalTime Float @default(0)
+totalKeyMomentCount Int @default(0)
+totalKeyMomentTime Float @default(0)
+}
+
+enum EventType {
+PLAYER_DAMAGED_PLAYER
+PLAYER_SELF_KILLED_PLAYER
+PLAYER_TEAM_KILLED_PLAYER
+PLAYER_TEAM_DAMAGED_PLAYER
+PLAYER_SELF_DAMAGED_PLAYER
+PLAYER_KILLED_PLAYER
+PLAYER_COMPLETED_DEFUSE_BOMB
+PLAYER_COMPLETED_EXPLODE_BOMB
+PLAYER_COMPLETED_PLANT_BOMB
+PLAYER_COMPLETED_BEGIN_DEFUSE_WITH_KIT
+PLAYER_COMPLETED_BEGIN_DEFUSE_WITHOUT_KIT
+GAME_STARTED_ROUND
+GAME_ENDED_ROUND
+}

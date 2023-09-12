@@ -1,0 +1,60 @@
+.timeline-container {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 1200px;
+    height: 6px;
+    background-color: #222;
+    border-radius: 5px;
+  }
+  
+  .timeline-line {
+    position: relative;
+    height: 6px;
+    border-radius: 5px;
+    background-color: #DAEE01;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+
+  .timeline-dot.GAME_STARTED_ROUND {
+    background-color: white;
+  }
+
+  .timeline-dot.GAME_ENDED_ROUND {
+    background-color: white;
+  }
+  
+  
+  .timeline-dot.PLAYER_KILLED_PLAYER {
+    background-color: red;
+  }
+  
+  .timeline-dot.PLAYER_TEAM_KILLED_PLAYER  {
+    background-color: blue;
+  }
+  
+  .timeline-dot.PLAYER_SELF_KILLED_PLAYER  {
+    background-color: yellow;
+  }
+  
+  .timeline-dot.PLAYER_COMPLETED_PLANT_BOMB  {
+    background-color: green;
+  }
+  
+  .timeline-dot.PLAYER_COMPLETED_DEFUSE_BOMB  {
+    background-color: cyan;
+  }
+  
+  .timeline-dot.PLAYER_COMPLETED_EXPLODE_BOMB  {
+    background-color: orange;
+  }
+  
