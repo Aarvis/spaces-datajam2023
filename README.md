@@ -15,7 +15,7 @@ Follow these steps to set up and run the DataJam Spaces App.
 Navigate to the `spaces-app` directory:
 
 ```bash
-cd datajam/spaces-app/
+cd /spaces-app/
 ```
 
 Install the necessary dependencies
@@ -29,7 +29,7 @@ npm i
 Move to the datajam-2023/js/server directory:
 
 ```bash
-cd datajam/datajam-2023/js/server
+cd /datajam-2023/js/server
 ```
 
 Again, install the necessary dependencies:
@@ -77,7 +77,7 @@ Ensure a Redis server is running at the default location:
 Navigate back to the spaces-app directory:
 
 ```bash
-cd dataJam/spaces-app/
+cd /spaces-app/
 ```
 
 Change the url in src/app.js 
@@ -98,7 +98,7 @@ npm start
 Navigate to the datajam-2023/js/datajam directory:
 
 ```bash
-cd dataJam/datajam-2023/js/datajam
+cd /datajam-2023/js/datajam
 ```
 
 Then run:
@@ -107,10 +107,10 @@ npm start
 ```
 
 #### Launch the Ad-Performance-Query-Engine:
-In a new terminal, navigate to dataJam/datajam-2023/js/server
+In a new terminal, navigate to /datajam-2023/js/server
 
 ```bash
-cd dataJam/datajam-2023/js/server
+cd /datajam-2023/js/server
 ```
 
 Run:
@@ -120,11 +120,11 @@ node ./index.js
 ```
 
 #### Start the Spaces Socket Receiver:
-Without closing the previous terminal, open a new terminal and navigate back to dataJam/datajam-2023/js/server. Run:
+Without closing the previous terminal, open a new terminal and navigate back to /datajam-2023/js/server. Run:
 
 ```bash
 node ./scoreboardSocketReceiver.js
 ```
 
 ### Conclusion
-Without closing the previous terminal, open a new terminal and navigate back to dataJam/datajam-2023/js/server. Run:
+Without closing the previous terminal, open a new terminal and navigate back to /datajam-2023/js/server. Run:
