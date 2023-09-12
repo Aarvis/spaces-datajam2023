@@ -1,2 +1,130 @@
-# spaces-datajam2023
-Submission Repo for dataJam 2023 sapces
+# DataJam Spaces App Setup
+
+Follow these steps to set up and run the DataJam Spaces App.
+
+## Prerequisites
+
+- Node.js and npm installed.
+- PostgreSQL set up and running.
+- Redis server available at `127.0.0.1:6379`.
+
+## Installation & Setup
+
+### 1. Install Dependencies for the Spaces App
+
+Navigate to the `spaces-app` directory:
+
+```bash
+cd datajam/spaces-app/
+```
+
+Install the necessary dependencies
+
+```bash
+npm i
+```
+
+### 2. Install Dependencies for the Spaces Engine Server
+
+Move to the datajam-2023/js/server directory:
+
+```bash
+cd datajam/datajam-2023/js/server
+```
+
+Again, install the necessary dependencies:
+
+```bash
+npm i
+```
+
+Incase of npm i error or dependency issues due to graphql version conflicts
+delete the node_modules in /js/server, extarct and paste the node_modules folder in that location.
+Google Drive URL 
+
+### 3. Generate Prisma Client
+Run the following command:
+
+```bash
+npx prisma generate
+```
+
+### 4. Configure Database Connection
+Open the .env file and set your PostgreSQL connection details:
+
+```bash
+DATABASE_URL="postgresql://<user_name>:<password>@localhost:<port>/<dbname>?schema=public"
+```
+
+Spin up your own psql db instance and Replace <user_name>, <password>, <port>, and <dbname> with your actual PostgreSQL details.
+
+### 5. Run Prisma Migrations
+Execute the migration with the following command:
+
+```bash
+npx prisma migrate dev --name init
+```
+
+### 6. Prepopulate the Database
+Use the provided spacesdbData to prepopulate your database. This is an extracted state after processing two CSGO matches websocket data, designed to simplify the demo. If you opt not to prepopulate, remember to run both the websocket and scoreboardSocketReceiver twice to populate the database correctly.
+
+### 7. Start a Redis Server
+Ensure a Redis server is running at the default location:
+```bash
+127.0.0.1:6379
+```
+### 8. Start the Spaces App
+Navigate back to the spaces-app directory:
+
+```bash
+cd dataJam/spaces-app/
+```
+
+Change the url in src/app.js 
+```bash
+const serverEndpoint = 'localhost:80' //or your specific ip:80
+
+const scoreBoardServerEndpoint = 'localhost:81' //or your specific ip:81
+```
+
+Start the web application:
+
+```bash
+npm start 
+```
+
+### 9. Boot Up Required Servers
+#### Start the DataJam Websocket:
+Navigate to the datajam-2023/js/datajam directory:
+
+```bash
+cd dataJam/datajam-2023/js/datajam
+```
+
+Then run:
+```
+npm start
+```
+
+#### Launch the Ad-Performance-Query-Engine:
+In a new terminal, navigate to dataJam/datajam-2023/js/server
+
+```bash
+cd dataJam/datajam-2023/js/server
+```
+
+Run:
+
+```bash
+node ./index.js
+```
+
+#### Start the Spaces Socket Receiver:
+Without closing the previous terminal, open a new terminal and navigate back to dataJam/datajam-2023/js/server. Run:
+
+```bash
+node ./scoreboardSocketReceiver.js
+```
+
+### Conclusion
+Without closing the previous terminal, open a new terminal and navigate back to dataJam/datajam-2023/js/server. Run:
