@@ -2,6 +2,8 @@
 
 Follow these steps to set up and run the DataJam Spaces App.
 
+Incase of any issues in running the code, please contact aakashjarvis1@gmail.com or contact through twitter @aakash_hash
+
 ## Prerequisites
 
 - Node.js and npm installed.
