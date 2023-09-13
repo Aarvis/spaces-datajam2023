@@ -39,9 +39,7 @@ Navigate to the `spaces-app` directory:
   
 
 ```bash
-
 cd /spaces-app/
-
 ```
 
   
@@ -51,9 +49,7 @@ Install the necessary dependencies
   
 
 ```bash
-
 npm i
-
 ```
 
   
@@ -62,14 +58,12 @@ npm i
 
   
 
-Move to the datajam-2023/js/server directory:
+Move to the dataJam-2023/js/server directory:
 
   
 
 ```bash
-
-cd /datajam-2023/js/server
-
+cd /dataJam-2023/js/server
 ```
 
   
@@ -79,16 +73,14 @@ Again, install the necessary dependencies:
   
 
 ```bash
-
 npm i
-
 ```
 
   
 
 Incase of npm i error or dependency issues due to graphql version conflicts
 
-delete the node_modules in /dataJam-2023/js/server, extract node_modules.zip in /dataJam-2023/js/server/node_modules.zip and paste the node_modules folder in this /dataJam-2023/js/server/ location. That should resolve the issue
+delete the node_modules in /dataJam-2023/js/server, extract node_modules.zip in /dataJam-2023/js/server/node_modules.zip and paste the node_modules folder in this /dataJam-2023/js/server/ .That should resolve the issue
 
   
 
@@ -99,9 +91,7 @@ Run the following command:
   
 
 ```bash
-
 npx prisma generate
-
 ```
 
   
@@ -113,14 +103,12 @@ Open the .env file and set your PostgreSQL connection details:
   
 
 ```bash
-
 DATABASE_URL="postgresql://<user_name>:<password>@localhost:<port>/<dbname>?schema=public"
-
 ```
 
   
 
-Spin up your own psql db instance and Replace <user_name>, <password>, <port>, and <dbname> with your actual PostgreSQL details.
+Spin up your own psql db instance and Replace user_name, password, port, and dbname with your actual PostgreSQL details.
 
   
 
@@ -131,16 +119,14 @@ Execute the migration with the following command:
   
 
 ```bash
-
 npx prisma migrate dev --name init
-
 ```
 
   
 
 ### 6. Prepopulate the Database
 
-Use the provided spacesdbData.sql in /dataJam-2023/js/server to prepopulate your database. This is an extracted state after processing two CSGO matches websocket data, designed to simplify the demo.
+Use the provided spacesdbData.sql in /dataJam-2023/js/server to prepopulate your database. This is an extracted state after processing two CSGO series 2578928 & 2579048 websocket data, designed to simplify the demo. Added to this Auctions, Bids and Sponsor data is populated to give a history of auctions for players
 
 In the empty db with schema, use restore option in pgadmin and check only data option.
 
@@ -155,9 +141,7 @@ In the empty db without schema, make sure you have both data and schema checked 
 Ensure a Redis server is running at the default location:
 
 ```bash
-
 127.0.0.1:6379
-
 ```
 
 ### 8. Start the Spaces App
@@ -167,9 +151,7 @@ Navigate back to the spaces-app directory:
   
 
 ```bash
-
 cd /spaces-app/
-
 ```
 
   
@@ -177,13 +159,9 @@ cd /spaces-app/
 Change the url in src/app.js
 
 ```bash
-
 const serverEndpoint = 'localhost:80' //or your specific ip:80
 
-  
-
 const scoreBoardServerEndpoint = 'localhost:81' //or your specific ip:81
-
 ```
 
   
@@ -193,9 +171,7 @@ Start the web application:
   
 
 ```bash
-
 npm start
-
 ```
 
   
@@ -204,38 +180,34 @@ npm start
 
 #### Start the DataJam Websocket:
 
-Navigate to the datajam-2023/js/datajam directory:
-
-  
+Navigate to the dataJam-2023/js/datajam directory
 
 ```bash
-
-cd /datajam-2023/js/datajam
-
+cd /dataJam-2023/js/datajam
 ```
 
-  
+In server.js change the seriesCode to 2579089
+
+```bash
+let seriesCode = 2579089
+```
 
 Then run:
 
 ```
-
 npm start
-
 ```
 
   
 
 #### Launch the Ad-Performance-Query-Engine:
 
-In a new terminal, navigate to /datajam-2023/js/server
+In a new terminal, navigate to /dataJam-2023/js/server
 
   
 
 ```bash
-
-cd /datajam-2023/js/server
-
+cd /dataJam-2023/js/server
 ```
 
   
@@ -245,23 +217,31 @@ Run:
   
 
 ```bash
-
 node ./index.js
-
 ```
 
   
 
 #### Start the Spaces Socket Receiver:
 
-Without closing the previous terminal, open a new terminal and navigate back to /datajam-2023/js/server. Run:
+Without closing the previous terminal, open a new terminal and navigate back to /dataJam-2023/js/server. Run:
+
+There are two ways to run scoreboardSocketReceiver.js
+1. Realtime event simulation (preferred to see actual changes in brand exposure metrics for sponsors and also experience spaces scoreboard in real time)
+2. Non Realtime event simulation, executed as fast as the system can.
+
+We will go ahead with 1. and to do this we will have to uncomment the waitForTimeout() function
+
+uncomment below line in scoreboardSocketReceiver.js
+```bash
+//await waitForTimeout((timeDifference(currentTimeIndex,previousTimeIndex))*1000)
+```
 
   
+save and run
 
 ```bash
-
 node ./scoreboardSocketReceiver.js
-
 ```
 
   
