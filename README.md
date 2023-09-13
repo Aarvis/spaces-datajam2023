@@ -41,7 +41,7 @@ npm i
 ```
 
 Incase of npm i error or dependency issues due to graphql version conflicts
-delete the node_modules in /js/server, extarct node_modules.zip and paste the node_modules in that location. That should resolve the issue
+delete the node_modules in /dataJam-2023/js/server, extract node_modules.zip in /dataJam-2023/js/server/node_modules.zip and paste the node_modules folder in this /dataJam-2023/js/server/ location. That should resolve the issue
 
 ### 3. Generate Prisma Client
 Run the following command:
