@@ -135,7 +135,7 @@ In the empty db without schema, make sure you have both data and schema checked 
 (Note, pgadmin might show that the restore failed, but check the table values for Player and Auction table and if both are populated you are good to go)
 
 
-2. If you did not want to go ahead with path 1), and you want to populate the db manually do 2) and 3). 
+2. If you did not want to go ahead with path 1), and you want to populate the db manually do 2) and 3) and 4). 
 
 First clear the db.
    
@@ -167,7 +167,7 @@ node ./scoreboardSocketReceiver.js
 
 3.  After websocket stream is completed for seriesCode 2578928, Stop the server running at /dataJam-2023/js/datajam with ctrl+c and Repeat step 2 for seriesCode 2579048,
 
-To populate Auction Data run:
+4. To populate Auction Data run:
 
 ```bash
 node ./populateAuctionSponsorDB.js
