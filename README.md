@@ -68,6 +68,9 @@ npx prisma migrate dev --name init
 
 ### 6. Prepopulate the Database
 Use the provided spacesdbData.sql in /dataJam-2023/js/server to prepopulate your database. This is an extracted state after processing two CSGO matches websocket data, designed to simplify the demo.
+In the empty db with schema, use restore option in pgadmin and check only data option
+In the empty db without schema, make sure you have both data and schema checked on.
+(Note, pgadmin might show that the restore failed, but check the table values for Player and Auction table and if both are populated you are good to go)
 
 ### 7. Start a Redis Server
 Ensure a Redis server is running at the default location:
