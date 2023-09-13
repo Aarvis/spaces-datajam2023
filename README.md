@@ -134,7 +134,10 @@ In the empty db without schema, make sure you have both data and schema checked 
 
 (Note, pgadmin might show that the restore failed, but check the table values for Player and Auction table and if both are populated you are good to go)
 
-2. If you want to populate the db manually. First clear the db.
+
+2. If you did not want to go ahead with path 1), and you want to populate the db manually do 2) and 3). 
+
+First clear the db.
    
 Navigate to the dataJam-2023/js/datajam directory
 
