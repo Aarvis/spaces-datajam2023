@@ -126,7 +126,7 @@ npx prisma migrate dev --name init
 
 ### 6. Prepopulate the Database
 
-Use the provided spacesdbData.sql in /dataJam-2023/js/server to prepopulate your database. This is an extracted state after processing two CSGO series 2578928 & 2579048 websocket data, designed to simplify the demo. Added to this Auctions, Bids and Sponsor data is populated to give a history of auctions for players
+1. Use the provided spacesdbData.sql in /dataJam-2023/js/server to prepopulate your database. This is an extracted state after processing two CSGO series 2578928 & 2579048 websocket data, designed to simplify the demo. Added to this Auctions, Bids and Sponsor data is populated to give a history of auctions for players
 
 In the empty db with schema, use restore option in pgadmin and check only data option.
 
@@ -134,8 +134,45 @@ In the empty db without schema, make sure you have both data and schema checked 
 
 (Note, pgadmin might show that the restore failed, but check the table values for Player and Auction table and if both are populated you are good to go)
 
-  
+2. If you want to populate the db manually. First clear the db.
+   
+Navigate to the dataJam-2023/js/datajam directory
 
+```bash
+cd /dataJam-2023/js/datajam
+```
+
+In server.js change the seriesCode to 2578928
+
+```bash
+let seriesCode = 2578928
+```
+
+Then run:
+
+```
+npm start
+```
+
+In another terminal
+
+navigate back to /dataJam-2023/js/server and run:
+
+```bash
+node ./scoreboardSocketReceiver.js
+```
+
+3.  After websocket stream is completed for seriesCode 2578928, Stop the server running at /dataJam-2023/js/datajam with ctrl+c and Repeat step 2 for seriesCode 2579048,
+
+To populate Auction Data run:
+
+```bash
+node ./populateAuctionSponsorDB.js
+```
+
+but after running you have to manually edit records to cover all three different cases that would arise due to auction, AUCTION OPEN, AUCTION CLOSED & TENURE GOING ON, AUCTION CLOSED & TENURE ENDED and AUCTION CLOSED & TENURE HASN'T STARTED
+
+  
 ### 7. Start a Redis Server
 
 Ensure a Redis server is running at the default location:
@@ -213,8 +250,6 @@ cd /dataJam-2023/js/server
   
 
 Run:
-
-  
 
 ```bash
 node ./index.js
