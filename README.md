@@ -41,8 +41,7 @@ npm i
 ```
 
 Incase of npm i error or dependency issues due to graphql version conflicts
-delete the node_modules in /js/server, extarct and paste the node_modules folder in that location.
-Google Drive URL 
+delete the node_modules in /js/server, extarct node_modules.zip and paste the node_modules in that location. That should resolve the issue
 
 ### 3. Generate Prisma Client
 Run the following command:
