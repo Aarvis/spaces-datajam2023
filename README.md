@@ -67,7 +67,7 @@ npx prisma migrate dev --name init
 ```
 
 ### 6. Prepopulate the Database
-Use the provided spacesdbData to prepopulate your database. This is an extracted state after processing two CSGO matches websocket data, designed to simplify the demo. If you opt not to prepopulate, remember to run both the websocket and scoreboardSocketReceiver twice to populate the database correctly.
+Use the provided spacesdbData.sql in /dataJam-2023/js/server to prepopulate your database. This is an extracted state after processing two CSGO matches websocket data, designed to simplify the demo.
 
 ### 7. Start a Redis Server
 Ensure a Redis server is running at the default location:
