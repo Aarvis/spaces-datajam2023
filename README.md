@@ -1,6 +1,7 @@
 # DataJam Spaces App Setup
 
   
+bugsFixedBranch has fixed App for Scoreboard line reset edge cases and Scoreboard view time update issues
 
 Follow these steps to set up and run the DataJam Spaces App.
 
