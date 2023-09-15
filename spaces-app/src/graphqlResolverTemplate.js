@@ -82,7 +82,13 @@ export const SPONSOR_LOGIN = gql`
   }
 `;
 
+export const UPDATE_SCOREBOARD_VIEWTIME = gql`
+  mutation updateScoreBoardViewTime($matchId: String!, $viewTime: Int!) {
+    updateScoreBoardViewTime(matchId: $matchId, viewTime: $viewTime)
+  }
+`;
+
 export const SCOREBOARD_CHANGED = gql`
   subscription ScoreBoardChanged($tournamentId: String!) {
     scoreBoardChanged(tournamentId: $tournamentId) 
-  }`;
+}`;

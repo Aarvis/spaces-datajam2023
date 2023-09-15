@@ -594,6 +594,31 @@ const resolvers = {
         sponsorId: sponsor.sponsorId,
       };
     },
+
+    async updateScoreBoardViewTime(parent, args, context, info){
+
+      try {
+        const scoreBoard = await prisma.scoreBoard.findUnique({
+          where: { matchId: args.matchId }
+        });
+
+        if (!scoreBoard) {
+          throw new Error("ScoreBoard not found!");
+        }
+
+        const newTime = scoreBoard.scoreBoardViewTime + args.viewTime;
+
+        return await prisma.scoreBoard.update({
+          where: { matchId: args.matchId },
+          data: { scoreBoardViewTime: newTime }
+        });
+
+      } catch (error) {
+        throw new Error(`Failed to update ScoreBoard view time: ${error.message}`);
+      }
+
+    },
+
   },
 };
 

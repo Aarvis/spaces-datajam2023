@@ -6,7 +6,7 @@ const wss = new WebSocketServer({
   port: 8080,
 });
 
-let seriesCode = 2578928
+let seriesCode = 2579089
 
 
 wss.on("connection", async function connection(ws, req) {

@@ -3707,7 +3707,7 @@ const doTask = async (object) => {
         })
 
         //console.log('tournamentScoreboard',tournamentScoreboard)
-        await pubsub.publish(`SCOREBOARD_CHANGED_${object.events[m].seriesStateDelta.id}`,{scoreBoardChanged:{tournamentScoreboard,eventCreated:null}});
+        await pubsub.publish(`SCOREBOARD_CHANGED_${object.events[m].seriesStateDelta.id}`,{scoreBoardChanged:{tournamentScoreboard,eventCreated:{matchId:object.events[m].seriesStateDelta.games[0].id}}});
       
       } else if (object.events[m].type == "series-!started-game") {
         if (reverseEntropyEvents == true) {
@@ -3814,7 +3814,7 @@ const doTask = async (object) => {
             }
           })
   
-          await pubsub.publish(`SCOREBOARD_CHANGED_${object.events[m].seriesStateDelta.id}`,{scoreBoardChanged:{tournamentScoreboard,eventCreated:null}});
+          await pubsub.publish(`SCOREBOARD_CHANGED_${object.events[m].seriesStateDelta.id}`,{scoreBoardChanged:{tournamentScoreboard,eventCreated:{matchId:object.events[m].seriesStateDelta.games[0].id}}});
 
         }
       } else if (object.events[m].type == "grid-invalidated-series") {
@@ -4129,9 +4129,7 @@ const doTask = async (object) => {
                 health:{
                     decrement:object.events[m].seriesStateDelta.games[0].teams[0].selfdamageTaken,
                 },
-                armor:{
-                    decrement:(object.events[m].seriesStateDelta.games[0].teams[0].currentArmor!= null && object.events[m].seriesStateDelta.games[0].teams[0].currentArmor!=undefined)?(object.events[m].seriesStateDelta.games[0].teams[0].currentArmor*-1):0
-                },
+                armor:object.events[m].actor.state.game.currentArmor,
                 damageTakenInstant:true,
             }
         })
@@ -4246,9 +4244,7 @@ const doTask = async (object) => {
                   health:{
                     decrement: object.events[m].actor.stateDelta.round.damageDealt
                 },
-                armor:{
-                    decrement:(object.events[m].seriesStateDelta.games[0].teams[0].currentArmor!= null && object.events[m].seriesStateDelta.games[0].teams[0].currentArmor!=undefined)?(object.events[m].seriesStateDelta.games[0].teams[0].currentArmor*-1):0
-                },
+                armor:object.events[m].target.state.game.currentArmor,
                 damageTakenInstant: true
             }
         })
@@ -4530,9 +4526,7 @@ const doTask = async (object) => {
                     health:{
                       decrement: object.events[m].actor.stateDelta.round.teamdamageDealt,
                   },
-                  armor:{
-                      decrement:(object.events[m].seriesStateDelta.games[0].teams[0].currentArmor!= null && object.events[m].seriesStateDelta.games[0].teams[0].currentArmor!=undefined)?(object.events[m].seriesStateDelta.games[0].teams[0].currentArmor*-1):0,
-                  },
+                  armor:object.events[m].target.state.game.currentArmor,
                   damageTakenInstant: true
               }
           })
@@ -5373,7 +5367,7 @@ const doTask = async (object) => {
 
         //console.log('tournamentScoreboard',tournamentScoreboard)
 
-        await pubsub.publish(`SCOREBOARD_CHANGED_${object.events[m].seriesStateDelta.id}`,{scoreBoardChanged:{tournamentScoreboard,eventCreated:null}});
+        await pubsub.publish(`SCOREBOARD_CHANGED_${object.events[m].seriesStateDelta.id}`,{scoreBoardChanged:{tournamentScoreboard,eventCreated:{matchId:object.events[m].seriesStateDelta.games[0].id}}});
         
 
       } else if(object.events[m].type == "player-dropped-item"){
@@ -5461,7 +5455,7 @@ const doTask = async (object) => {
 
         //console.log('tournamentScoreboard',tournamentScoreboard)
 
-        await pubsub.publish(`SCOREBOARD_CHANGED_${object.events[m].seriesStateDelta.id}`,{scoreBoardChanged:{tournamentScoreboard,eventCreated:null}});
+        await pubsub.publish(`SCOREBOARD_CHANGED_${object.events[m].seriesStateDelta.id}`,{scoreBoardChanged:{tournamentScoreboard,eventCreated:{matchId:object.events[m].seriesStateDelta.games[0].id}}});
         
 
       } else if(object.events[m].type == "player-purchased-item"){
@@ -5549,7 +5543,7 @@ const doTask = async (object) => {
 
         //console.log('tournamentScoreboard',tournamentScoreboard)
 
-        await pubsub.publish(`SCOREBOARD_CHANGED_${object.events[m].seriesStateDelta.id}`,{scoreBoardChanged:{tournamentScoreboard,eventCreated:null}});
+        await pubsub.publish(`SCOREBOARD_CHANGED_${object.events[m].seriesStateDelta.id}`,{scoreBoardChanged:{tournamentScoreboard,eventCreated:{matchId:object.events[m].seriesStateDelta.games[0].id}}});
         
 
       }
@@ -5581,7 +5575,7 @@ const processQueue = async () => {
 
     else{
       currentTimeIndex = task.occurredAt;
-      //await waitForTimeout((timeDifference(currentTimeIndex,previousTimeIndex))*1000)
+      await waitForTimeout((timeDifference(currentTimeIndex,previousTimeIndex))*1000)
       await doTask(task);
       previousTimeIndex = currentTimeIndex;
     }

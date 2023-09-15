@@ -63,6 +63,8 @@
     OpenBid(playerId: String!, startingValue: Int!, term: Int!, startDate: String!): JSON!
     playerLogin(playerIdentifier: String!, password: String!): JSON!
     sponsorLogin(sponsorIdentifier: String!, password: String!): JSON!
+    updateScoreBoardViewTime(matchId: String!, viewTime: Int!): JSON!
+
   }
 
   type Subscription {
