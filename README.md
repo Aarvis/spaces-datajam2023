@@ -207,8 +207,9 @@ const scoreBoardServerEndpoint = 'localhost:81' //or your specific ip:81
   
 
 Start the web application:
+Password for all Player Profiles are: player@1234
+Password for all Player Sponsor are: sponsor@1234
 
-  
 
 ```bash
 npm start
